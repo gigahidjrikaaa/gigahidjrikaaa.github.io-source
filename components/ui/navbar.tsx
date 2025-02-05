@@ -7,30 +7,30 @@ const Navbar: React.FC = () => {
       <div className='flex justify-between items-center'>
         <div className="flex items-center">
             <Link href="/" passHref>
-            <p className="text-xl font-bold cursor-pointer">Logo</p>
+                <p className="text-xl font-bold cursor-pointer">Logo</p>
             </Link>
         </div>
         <div className="flex space-x-4">
             <Link href="/" passHref>
-            <p className="cursor-pointer">Home</p>
+                <p className="cursor-pointer">Home</p>
             </Link>
             <Link href="/about" passHref>
-            <p className="cursor-pointer">About</p>
-            </Link>
-            <Link href="/blog" passHref>
-            <p className="cursor-pointer">Blog</p>
+                <p className="cursor-pointer">About</p>
             </Link>
             <div className="relative group">
-            <p className="cursor-pointer">Projects</p>
-            <div className="absolute right-0 mt-2 w-48 bg-white text-black rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <Link href="/projects/cybersecurity" passHref>
-                <p className="block px-4 py-2 hover:bg-gray-200 cursor-pointer">Cyber Security</p>
-                </Link>
-                <Link href="/projects/webdev" passHref>
-                <p className="block px-4 py-2 hover:bg-gray-200 cursor-pointer">Web Development</p>
-                </Link>
+                <p className="cursor-pointer">Projects</p>
+                <div className="absolute right-0 mt-2 w-48 bg-white text-black rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <Link href="/projects/cybersecurity" passHref>
+                        <p className="block px-4 py-2 hover:bg-gray-200 cursor-pointer">Cyber Security</p>
+                    </Link>
+                    <Link href="/projects/webdev" passHref>
+                        <p className="block px-4 py-2 hover:bg-gray-200 cursor-pointer">Web Development</p>
+                    </Link>
+                </div>
             </div>
-            </div>
+            <Link href="/blog" passHref>
+                <p className="cursor-pointer">Blog</p>
+            </Link>
         </div>
       </div>
     </nav>
